@@ -152,6 +152,14 @@ header h1 {
   width: 100%;
 }
 
+.mid-content h2 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
 .mid-content h2,
 .mid-content p {
   justify-content: center;
