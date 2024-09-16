@@ -149,6 +149,7 @@ header h1 {
   background-color: #ccccff;
   margin: 0 auto;
   padding: 50px 0;
+  width: 100%;
 }
 
 .mid-content h2,
@@ -156,7 +157,7 @@ header h1 {
   justify-content: center;
   align-items: center;
   margin: 10px auto;
-  max-width: 70%;
+  max-width: 100%;
 }
 
 .mid-content p {
@@ -387,7 +388,7 @@ header h1 {
 }
 
 .footer-email {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .footer-section h4 {
