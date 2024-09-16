@@ -66,7 +66,7 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 90vh;
   text-align: center;
   color: whitesmoke;
   background-image: url("img/rachit-tank-2cFZ_FB08UM-unsplash.jpg");
@@ -156,6 +156,7 @@ header h1 {
   justify-content: center;
   align-items: center;
   margin: 10px auto;
+  max-width: 70%;
 }
 
 .mid-content p {
@@ -383,6 +384,10 @@ header h1 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
   padding: 0 20px;
+}
+
+.footer-email {
+  font-size: 10px;
 }
 
 .footer-section h4 {
