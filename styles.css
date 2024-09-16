@@ -66,7 +66,7 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 70vh;
   text-align: center;
   color: whitesmoke;
   background-image: url("img/rachit-tank-2cFZ_FB08UM-unsplash.jpg");
@@ -159,7 +159,7 @@ header h1 {
 }
 
 .mid-content p {
-  max-width: 50%;
+  max-width: 70%;
   text-align: center;
 }
 
