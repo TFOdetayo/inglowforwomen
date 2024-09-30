@@ -398,6 +398,7 @@ header h1 {
   color: #f2dadf;
   padding: 40px 0 10px 0;
   font-size: 12px;
+  height: auto;
 }
 
 .footer-content {
