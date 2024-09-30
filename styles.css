@@ -173,6 +173,7 @@ header h1 {
 .mid-content p {
   max-width: 70%;
   text-align: center;
+  color: #fff;
 }
 
 .search-container {
@@ -396,7 +397,7 @@ header h1 {
   background-color: #d70047;
   color: #f2dadf;
   padding: 40px 0 10px 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .footer-content {
@@ -546,7 +547,7 @@ header h1 {
 
 .about-us-container {
   background-color: #ffacaf;
-  height: 90vh;
+  height: 60vh;
   width: 100%;
   margin: auto;
 }
@@ -573,6 +574,7 @@ header h1 {
 
 .about-us-col-1 p {
   padding: 10px 0;
+  color: #fff;
 }
 
 .about-us-col-1 h3 {
