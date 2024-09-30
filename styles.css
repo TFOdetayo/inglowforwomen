@@ -398,6 +398,7 @@ header h1 {
   color: #f2dadf;
   padding: 40px 0 10px 0;
   font-size: 12px;
+  height: 50vh;
 }
 
 .footer-content {
@@ -547,7 +548,7 @@ header h1 {
 
 .about-us-container {
   background-color: #ffacaf;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   margin: auto;
 }
@@ -561,7 +562,7 @@ header h1 {
   justify-content: space-between;
   text-align: justify;
   align-items: center;
-  padding: 100px 0;
+  padding: 30px 0;
 }
 
 .about-us-col {
