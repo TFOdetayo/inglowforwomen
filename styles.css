@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
 }
 
 body {
@@ -341,7 +344,7 @@ header h1 {
 
 .buy-now-btn:hover {
   background: #111136;
-  color: #ffacaf;
+  color: #ccccff;
 }
 
 .buy-now-btn:active {
@@ -538,11 +541,243 @@ header h1 {
 
 .products-buy-now-btn:hover {
   background: #111136;
-  color: #ffacaf;
+  color: #ccccff;
 }
 
 .products-buy-now-btn:active {
   background: #111136;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+
+.main-container-products {
+  background-color: #ffacaf;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background-color: #ffacaf;
+}
+
+.container .products-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.container .products-container #category-bra,
+.container .products-container #category-pants,
+.container .products-container #category-everything-in-between {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#category-bra .product,
+#category-pants .product,
+#category-everything-in-between .product {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  outline: 0.1rem solid #ffacaf;
+  border-radius: 20px;
+  outline-offset: -1.5rem;
+  cursor: pointer;
+}
+
+#category-bra .product:hover,
+#category-pants .product:hover,
+#category-everything-in-between .product:hover {
+  outline: 0.2rem solid #d70047;
+  outline-offset: 0;
+}
+
+#category-bra .product img,
+#category-pants .product img,
+#category-everything-in-between .product img {
+  width: 120px;
+  height: 120px;
+}
+
+#category-bra .product:hover img,
+#category-pants .product:hover img,
+#category-everything-in-between .product:hover img {
+  transform: scale(0.9);
+}
+
+#category-bra .product h3,
+#category-pants .product h3,
+#category-everything-in-between .product h3 {
+  padding: 0.5rem 0;
+  font-size: 1.6rem;
+  color: #111136;
+}
+
+#category-bra .product:hover h3,
+#category-pants .product:hover h3,
+#category-everything-in-between .product:hover h3 {
+  color: #d70047;
+}
+
+.container .products-container #category-bra .product .price,
+.container .products-container #category-pants .product .price,
+.container .products-container #category-everything-in-between .product .price {
+  font-size: 1.6rem;
+  color: #141496;
+}
+
+.products-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-preview #category-bra .preview,
+.products-preview #category-pants .preview,
+.products-preview #category-everything-in-between .preview {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  background: #f2dadf;
+  position: relative;
+  margin: 2rem;
+  width: 40rem;
+}
+
+.products-preview #category-bra .preview.active,
+.products-preview #category-pants .preview.active,
+.products-preview #category-everything-in-between .preview.active {
+  display: inline-block;
+}
+
+.products-preview #category-bra .preview img,
+.products-preview #category-pants .preview img,
+.products-preview #category-everything-in-between .preview img {
+  height: 120px;
+  width: 120px;
+}
+
+.products-preview #category-bra .preview .fa-times,
+.products-preview #category-pants .preview .fa-times,
+.products-preview #category-everything-in-between .preview .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  color: #111136;
+  font-size: 2rem;
+}
+
+.products-preview #category-bra .preview .fa-times:hover,
+.products-preview #category-pants .preview .fa-times:hover,
+.products-preview #category-everything-in-between .preview .fa-times:hover {
+  transform: rotate(90deg);
+}
+
+.products-preview #category-bra .preview h3,
+.products-preview #category-pants .preview h3,
+.products-preview #category-everything-in-between .preview h3 {
+  color: #111136;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+}
+
+.products-preview #category-bra .preview p,
+.products-preview #category-pants .preview p,
+.products-preview #category-everything-in-between .preview p {
+  line-height: 1.5;
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #d70047;
+}
+
+.products-preview #category-bra .preview .price,
+.products-preview #category-pants .preview .price,
+.products-preview #category-everything-in-between .preview .price {
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  color: #141496;
+}
+
+.products-preview #category-bra .preview .buttons,
+.products-preview #category-pants .preview .buttons,
+.products-preview #category-everything-in-between .preview .buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+}
+
+.products-preview #category-bra .preview .buttons a,
+.products-preview #category-pants .preview .buttons a,
+.products-preview #category-everything-in-between .preview .buttons a {
+  flex: 1 1 16rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  background: #d70047;
+  color: #ffacaf;
+  border: 0.1rem solid #d70047;
+}
+
+.products-preview #category-bra .preview .buttons a.cart,
+.products-preview #category-pants .preview .buttons a.cart,
+.products-preview #category-everything-in-between .preview .buttons a.cart {
+  color: #111136;
+  border: 0.1rem solid #111136;
+  background: #f2dadf;
+}
+
+.products-preview #category-bra .preview .buttons a.cart:hover,
+.products-preview #category-pants .preview .buttons a.cart:hover,
+.products-preview
+  #category-everything-in-between
+  .preview
+  .buttons
+  a.cart:hover {
+  background: #111136;
+  color: #ccccff;
+  border: 0.1rem solid #111136;
+}
+
+.products-preview #category-bra .preview .buttons a.buy:hover,
+.products-preview #category-pants .preview .buttons a.buy:hover,
+.products-preview
+  #category-everything-in-between
+  .preview
+  .buttons
+  a.buy:hover {
+  background: #111136;
+  color: #ccccff;
+  border: 0.1rem solid #111136;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-preview .preview img {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
 }
 
 .about-us-container {
